@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom1</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: bisque;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+
+
+    </div> -->
+
+    <!--  -->
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+    <script>
+        // const parent = document.querySelector(".parent")
+        // console.log(parent)
+        // console.log(parent.children[1].innerHTML)
+        // for (let i = 0; i<parent.children.length; i++) {
+        //     console.log(parent.children[i].innerHTML)
+            
+        // }
+        // parent.children[1].style.color = "red"
+        // parent.children[2].style.color = "white"
+        // parent.children[2].innerHTML = "Govind"
+        // 
+        // Create
+        // const div = document.createElement("div")
+        // console.log(div)
+        // div.className = "main"
+        // div.id = "myID"
+        // div.setAttribute("title", "generate govind")
+        // div.innerHTML = "Chai aur Govind"
+        // const div1 = document.body.appendChild(div)
+        // div1.style.color = "red"
+
+        // 
+
+        // 
+        function addLanguage(langName){
+            const li = document.createElement("li")
+            li.innerHTML = `${langName}`
+            document.querySelector(".language").appendChild(li)
+        }
+        addLanguage("python")
+        addLanguage("java")
+        function addOptimize(langName){
+            const li = document.createElement("li")
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector(".language").appendChild(li)
+
+
+        }
+        addOptimize("TypeScript")
+        // 
+        // Edit
+        const second = document.querySelector("li:nth-child(2)")
+        second.innerHTML = "CCCC"
+        // remove
+        const last = document.querySelector("li:last-child")
+        last.remove()
+
+
+
+     </script>
+    
+</body>
+</html>
